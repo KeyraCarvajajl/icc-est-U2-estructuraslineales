@@ -1,7 +1,6 @@
 package controllers;
 
 import java.util.EmptyStackException;
-
 import models.Node;
 
 public class Stack {
@@ -44,13 +43,24 @@ public class Stack {
         return top == null;
     }
 
-    public void printStack(){
-
+    public void printStack() {
     Node current = top;
-        while (current != null) {
-            System.out.println(current.getValue());
-            current = current.getNext();
-        }
+    while (current != null) {
+        System.out.print(current.getValue() + " ");
+        current = current.getNext();
     }
+    System.out.println(); 
 }
-                                 
+
+
+    public int size() {
+    Node aux = top;
+    int count = 0;
+        while (aux != null) {
+            aux = aux.getNext();
+            count++;
+        }
+    return count;
+    }
+
+} 

@@ -3,7 +3,7 @@ package models;
 public class Node {
     
     private int value; // Valor del Nodo
-    private Node next; // Referencia del Nodo 
+    public Node next; // Referencia del Nodo 
 
     public Node(int value) {
         this.value = value;
