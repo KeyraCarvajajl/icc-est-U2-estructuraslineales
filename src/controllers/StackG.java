@@ -49,10 +49,10 @@ public class StackG<T> {
     public void printStack() {
     NodeGeneric<T> current = top;
     while (current != null) {
-        System.out.print(current.getValue() + " ");
+        System.out.print(current.getValue() + "  ");
         current = current.getNext();
     }
-    System.out.println(); // Salto de línea al final
+    System.out.println(); 
     }
 }
 

@@ -52,7 +52,7 @@ public class Cola {
     public void printCola() {
         Node current = primero;
         while (current != null) {
-            System.out.print(current.getValue() + " ");
+            System.out.print(current.getValue() + " | ");
             current = current.getNext();
         }
         System.out.println();
